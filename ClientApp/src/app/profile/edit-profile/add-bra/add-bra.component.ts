@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ProfileService} from "../../profile-service";
 import {IProfile} from "../../../../models/profile.model";
-import {FormControl, FormGroup} from "@angular/forms";
+import {UntypedFormControl, UntypedFormGroup} from "@angular/forms";
 
 @Component({
   selector: 'profile-add-bra',
@@ -12,18 +12,18 @@ import {FormControl, FormGroup} from "@angular/forms";
 export class AddBraComponent implements OnInit {
   @Input()
   profile!: IProfile;
-  braForm!: FormGroup;
+  braForm!: UntypedFormGroup;
 
   constructor(private router: Router, private profileService: ProfileService) { }
 
   ngOnInit(): void {
-    let cup = new FormControl();
-    let band = new FormControl();
-    let make = new FormControl();
-    let model = new FormControl();
-    let size = new FormControl();
+    let cup = new UntypedFormControl();
+    let band = new UntypedFormControl();
+    let make = new UntypedFormControl();
+    let model = new UntypedFormControl();
+    let size = new UntypedFormControl();
 
-    this.braForm = new FormGroup({
+    this.braForm = new UntypedFormGroup({
       cup: cup,
       band: band,
       make: make,

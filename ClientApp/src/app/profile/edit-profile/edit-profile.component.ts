@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {FormControl, FormGroup} from "@angular/forms";
+import {UntypedFormControl, UntypedFormGroup} from "@angular/forms";
 import {ProfileService} from "../profile-service";
 import {IProfile} from "../../../models/profile.model";
 
@@ -12,19 +12,19 @@ import {IProfile} from "../../../models/profile.model";
 export class EditProfileComponent implements OnInit {
   @Input()
   profile!: IProfile;
-  profileForm!: FormGroup;
+  profileForm!: UntypedFormGroup;
   addBra:Boolean = false;
 
   constructor(private router: Router, private profileService: ProfileService) { }
 
   ngOnInit(): void {
-    let bust = new FormControl();
-    let band = new FormControl();
-    let system = new FormControl();
-    let point = new FormControl();
-    let about = new FormControl();
+    let bust = new UntypedFormControl();
+    let band = new UntypedFormControl();
+    let system = new UntypedFormControl();
+    let point = new UntypedFormControl();
+    let about = new UntypedFormControl();
 
-    this.profileForm = new FormGroup({
+    this.profileForm = new UntypedFormGroup({
       bust: bust,
       band: band,
       system: system,
