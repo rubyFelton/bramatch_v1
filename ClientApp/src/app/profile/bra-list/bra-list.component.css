@@ -1,0 +1,8 @@
+.card{
+  background: slategray;
+  border: darkslategray;
+  border-radius: 5px;
+  transition: .5s cubic-bezier(.685,.0473,.346,1);
+  margin: 5px;
+  padding-left: 2px;
+}

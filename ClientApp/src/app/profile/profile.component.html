@@ -1,0 +1,8 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+    <app-profile-sidenav [profile]="profile"></app-profile-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

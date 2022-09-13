@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/material": "^14.2.0",
+    "angular-material-sidenav": "^0.1.1"
+  }
+}

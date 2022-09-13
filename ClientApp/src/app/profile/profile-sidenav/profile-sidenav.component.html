@@ -1,0 +1,17 @@
+<div class="sidenav" >
+  <div class="profile-pic">
+    <div><img src="favicon.ico"></div>
+    <div>{{profile.username}}</div>
+    <div>Band Size: {{profile.band}}</div>
+    <div>Bust Size: {{profile.bust}}</div>
+    <div>Point-to-Point: {{profile.point}}</div>
+    <div>Measurement System : {{profile.system}}</div>
+    <br>
+  </div>
+  <button mat-button [routerLink]="['edit']">
+    <!--      <mat-icon>pencil</mat-icon>-->
+    Edit Profile
+  </button>
+  <hr>
+  <profile-bra-list [bras]="profile?.bras"></profile-bra-list>
+</div>

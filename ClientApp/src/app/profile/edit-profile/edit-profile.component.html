@@ -1,0 +1,36 @@
+<div class="container">
+  <form [formGroup]="profileForm" (ngSubmit)="saveProfile(profileForm.value)">
+    <div class="form-group">
+      <label for="about">Tell us about yourself and your lifestyle </label>
+      <textarea formControlName="about" matInput id="about" placeholder="About Me"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="system">Measurement System</label>
+      <input formControlName="system" mat-input id="system" placeholder="in or cm" />
+    </div>
+    <div class="form-group">
+      <label for="bust">Bust Measurement</label>
+      <input formControlName="bust" mat-input id="bust" placeholder="around fullest part"/>
+    </div>
+
+    <div class="form-group">
+      <label for="band">Band Measurement</label>
+      <input formControlName="band" mat-input id="band" placeholder="around ribcage just under bust"/>
+    </div>
+
+    <div class="form-group">
+      <label for="point">Point to Point Measurement</label>
+      <input formControlName="point" mat-input id="point" placeholder="nip to nip"/>
+    </div>
+<!--    <button type="button" class="btn btn-default" (click)="showAddBra()">Add Bra</button>-->
+<!--    <div id="add-bra" hidden="{{addBra}}">-->
+<!--      <hr>-->
+<!--      <profile-add-bra></profile-add-bra>-->
+<!--    </div>-->
+    <hr>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
+
+  </form>
+</div>

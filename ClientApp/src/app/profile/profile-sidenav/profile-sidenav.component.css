@@ -1,0 +1,17 @@
+.sidenav{
+  background: lightslategray;
+  height: 100%;
+  width: 230px;
+  display: block;
+  box-shadow: 0 0 45px 0 black;
+  margin-right: 2px;
+  padding-left: 5px;
+  border-radius: 5px;
+  transition: .5s cubic-bezier(.685,.0473,.346,1);
+}
+.logo{
+  position: relative;
+  padding: 0.5rem 0.7rem;
+  z-index: 4;
+}
+

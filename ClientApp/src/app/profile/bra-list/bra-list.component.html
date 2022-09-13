@@ -1,0 +1,15 @@
+<div class="card-group">
+
+  <div class="card" *ngFor="let bra of bras">
+    <div>
+      <label>Maker: </label> <label>{{bra.make}}</label>
+    </div>
+    <div>
+      <label>Model: </label> <label>{{bra.model}}</label>
+    </div>
+    <div>
+      <label>Size: </label> <label>{{bra.size}}</label>
+    </div>
+  </div>
+  <button mat-button [routerLink]="['add-bra']">Add Bra </button>
+</div>
